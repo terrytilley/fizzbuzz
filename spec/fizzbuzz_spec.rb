@@ -6,8 +6,12 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(3)).to eq("fizz")
   end
 
-  it 'Return "buzz" when passwed 5' do
+  it 'Return "buzz" when passed 5' do
     expect(fizzbuzz(5)).to eq("buzz")
+  end
+
+  it 'Return "fizzbuzz" when passed 15' do
+    expect(fizzbuzz(15)).to eq("fizzbuzz")
   end
 
 end
