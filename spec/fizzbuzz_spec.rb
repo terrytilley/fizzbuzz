@@ -28,4 +28,12 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(234876125)).to eq("buzz")
   end
 
+  it 'Returns "fizzbuzz" when number is divisible by 5 and 3' do
+    expect(fizzbuzz(15)).to eq("fizzbuzz")
+  end
+
+  it 'Returns number when number is not divisable by either 3 or 5' do
+    expect(fizzbuzz(2)).to eq(2)
+  end
+
 end
