@@ -18,9 +18,13 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(2)).to eq(2)
   end
 
-  it 'returns "Not a valid number" if input is not a number' do
+  it 'Returns "Not a valid number" if argument is not a number' do
     expect(fizzbuzz(:sym)).to eq("Not a valid number")
     expect(fizzbuzz("String")).to eq("Not a valid number")
+  end
+
+  it 'Returns "Not a valid number" if argument not given' do
+    expect(fizzbuzz()).to eq("Not a valid number")
   end
 
 end
