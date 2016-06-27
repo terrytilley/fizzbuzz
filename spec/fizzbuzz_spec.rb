@@ -19,7 +19,8 @@ describe 'fizzbuzz' do
   end
 
   it 'returns "Not a valid number" if input is not a number' do
-    expect(fizzbuzz("This is a string")).to eq("Not a valid number")
+    expect(fizzbuzz(:sym)).to eq("Not a valid number")
+    expect(fizzbuzz("String")).to eq("Not a valid number")
   end
 
 end
