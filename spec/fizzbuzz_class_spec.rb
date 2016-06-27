@@ -1,6 +1,6 @@
 require 'fizzbuzz_class'
 
-describe 'fizzbuzz' do
+describe 'fizzbuzz_class' do
 
   it 'Return "fizz" when number is divisible by 3 but not 5' do
     expect(36.fizzbuzz).to eq("fizz")
